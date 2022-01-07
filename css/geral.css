@@ -16,23 +16,23 @@
   --inativo: #b98e8e;
 }
 h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 h2{
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 h4{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 h5{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 h6{
@@ -53,8 +53,9 @@ button{
   transition: 0.3s ease;
 }
 button:hover{
-  background: var(--preto4);
+  background: var(--branco);
 }
+
 p{
   font-size: 1rem;
   line-height: 1.5;
@@ -72,18 +73,25 @@ a{
 }
 
 .logo{
-  width: 50px;
-  max-width:60px;
+  width: 65px;
+  max-width:65px;
   margin: 0 auto;
 }
 .logo img{
   width: 100%;
 }
-
 .navbar{
   font-size: 16px;
- top: 0;
- left: 0;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.star{
+  padding: 10px 0;
+}
+.star i{
+  font-size: 0.8rem;
+  color: goldenrod;
 }
 .navbar .navbar-nav .nav-link{
   padding: 0 20px;
@@ -199,4 +207,103 @@ a{
 #new .one .details button:hover{
   color: var(--branco);
   border-bottom: 1px solid var(--branco);
+}
+/* produtos */
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.product img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: relative;
+ 
+}
+.product:hover {
+  opacity: 0.8;
+}
+.product .buy-now{
+  background: var(--ativo);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.product:hover .buy-now{
+  opacity: 1;
+  transform: translateY(0);
+  color: var(--branco);
+}
+
+/* card do desconto*/
+
+#banner{
+  background: url("/img/banner/2.jpg") no-repeat  center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#banner h4, h1{
+  color: var(--branco);
+  font-weight: 400;
+}
+#banner span{
+  color: goldenrod;
+  font-weight: 500;
+}
+
+footer{
+  background-color: var(--preto1);
+}
+footer h3{
+  color: var(--branco);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+footer p{
+  color: var(--branco);
+  font-weight: 300;
+  font-size: 1rem;
+}
+footer li{
+  padding-bottom: 4px;
+}
+footer li a{
+  font-size: 0.8rem;
+  color: var(--branco);
+}
+footer li a:hover{
+  color: var(--ativo);
+}
+footer .copyright a{
+  color:var(--preto1);
+  width: 38px;
+  height: 38px;
+  background-color: var(--branco);
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+  margin-bottom: 30px;
+}
+footer .copyright a:hover{
+  background-color: var(--ativo);
+  color: var(--branco);
 }
