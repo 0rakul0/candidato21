@@ -3,7 +3,7 @@ teste de candidatos - desenvolvimento front-end.
 
 https://0rakul0.github.io/candidato21/
 
-https://trello.com/invite/b/5MQX4Wk6/30ee49e1185c2cedb138403fe470898d/candidato-frontend
+https://trello.com/
 
 # Modelos para inspiração
 - https://www.lojasleader.com.br/
@@ -11,22 +11,27 @@ https://trello.com/invite/b/5MQX4Wk6/30ee49e1185c2cedb138403fe470898d/candidato-
 - https://www.pontofrio.com.br/
 
 # Tarefas a fazer
-  - página inicial 
+  - página inicial <- criar
+    - menu top ok
+    - banner top ok
   - pagina de login
+  - página de editar informações do cliente
+ 
   - página de produto
   - página de produtos
   - página de Favoritos
   - página de checkin
   - página de compra finalizada
+  - página de carrinho 
+
   - página de painel administrativo
-  - página de editar informações do cliente
   - página para criar cliente
   - página para cadastrar produto
-  - página de carrinho 
 
 # tecnologias usadas
   - HTML5
   - CSS3
+  - Bootstrap4
   - JavaScript
   - jQuery
   - github copilot

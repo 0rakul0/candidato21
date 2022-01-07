@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+  --preto1:#010101;
+  --preto2:#424242;
+  --preto3:#616161;
+  --preto4:#757575;
+  --preto5:#d9d9d9;
+  --ativo: #ffb23d;
+  --branco: #ffffff;
+  --inativo: #b98e8e;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+h4{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 400;
+}
+h6{
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--preto5);
+}
+button{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background: var(--preto1);
+  cursor: pointer;
+  color: var(--preto5);
+  padding: 13px 20px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+button:hover{
+  background: var(--preto4);
+}
+p{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--preto1);
+}
+a{
+  color: var(--preto1);
+  text-decoration: none;
+}
+.section-p1{
+  padding: 40px 80px;
+}
+.section-m1{
+  margin: 40px 0;
+}
+
+.logo{
+  width: 50px;
+  max-width:60px;
+  margin: 0 auto;
+}
+.logo img{
+  width: 100%;
+}
+
+.navbar{
+  font-size: 16px;
+ top: 0;
+ left: 0;
+}
+.navbar .navbar-nav .nav-link{
+  padding: 0 20px;
+  color: var(--preto1);
+  transition: all 0.3s ease;
+}
+.navbar i:hover,
+.navbar i.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+  color: var(--ativo);
+}
+.navbar i{
+  font-size: 1.2rem;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  color: var(--preto1);
+}
+
+#bar{
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  padding: 7px;
+  transition: 0.4s ease;
+  color: var(--preto1);
+}
+#bar.active,
+#bar:hover{
+  color: #fff;
+}
+/* Mobile bar*/
+.navbar-light .navbar-toggler{
+  border: none;
+  outline: none;
+}
+
+/* adptação de tela */
+@media only screen and (max-width: 991px){
+  body > header > nav > button:focus,
+  body > header > nav > button:hover{
+    background: var(--ativo);
+  }
+
+  body > header > nav > button:focus #bar,
+  body > header > nav > button:hover #bar{
+    background: var(--ativo);
+  }
+  #collapsibleNavId > ul {
+   
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  #collapsibleNavId > ul > li:nth-child(n) > a {
+    padding: 10px;
+  }
+}
+
+#home span{
+  color: var(--ativo);
+}
+#home{
+  background: url("/img/bg.jpeg") no-repeat  center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+/* novos itens*/
+#new .one img{
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#new .one .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#new .one:hover .details{
+ cursor: pointer;
+  background: rgba(0,0,0,0.5);
+}
+#new .one .details button{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background:none;
+  color: var(--preto2);
+  border-bottom: 1px solid var(--preto2);
+  padding: 5px 10px;
+  transition: 0.3s ease;
+  transform: translateY(70px);
+}
+#new .one .details button:hover{
+  color: var(--branco);
+  border-bottom: 1px solid var(--branco);
+}
