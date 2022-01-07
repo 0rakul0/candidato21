@@ -4,12 +4,11 @@ teste de candidatos - desenvolvimento front-end.
 https://0rakul0.github.io/candidato21/
 
 # Modelos para inspiração
--
--
--
+- https://www.lojasleader.com.br/
+- https://www.centauro.com.br/
+- https://www.pontofrio.com.br/
 
 # Tarefas a fazer
-
   - página inicial 
   - pagina de login
   - página de produto
@@ -22,3 +21,11 @@ https://0rakul0.github.io/candidato21/
   - página para criar cliente
   - página para cadastrar produto
   - página de carrinho 
+
+# tecnologias usadas
+  - HTML5
+  - CSS3
+  - JavaScript
+  - jQuery
+  - github copilot
+  - github pages
