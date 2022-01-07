@@ -3,6 +3,8 @@ teste de candidatos - desenvolvimento front-end.
 
 https://0rakul0.github.io/candidato21/
 
+https://trello.com/invite/b/5MQX4Wk6/30ee49e1185c2cedb138403fe470898d/candidato-frontend
+
 # Modelos para inspiração
 - https://www.lojasleader.com.br/
 - https://www.centauro.com.br/
