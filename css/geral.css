@@ -157,7 +157,7 @@ a{
   color: var(--ativo);
 }
 #home{
-  background: url("/img/backgrounds/bg.png") no-repeat  center;
+  background: url("../img/backgrounds/bg.png") no-repeat  center;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -246,7 +246,7 @@ a{
 /* card do desconto*/
 
 #banner{
-  background: url("/img/banner/2.jpg") no-repeat  center;
+  background: url("../img/banner/2.jpg") no-repeat  center;
   width: 100%;
   height: 100vh;
   background-size: cover;
