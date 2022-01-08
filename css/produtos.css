@@ -14,3 +14,31 @@ body > main > nav > ul > li:nth-child(n):hover > a{
 .pagination a{
     color: var(--preto1); ;
 }
+
+/* controle da galeria*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+.menu li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    width: 150px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.menu li:hover{
+    color: #fff;
+    background: #000;
+}
+.menu li.active{
+    text-decoration: none;
+    color: #fff;
+    background: #403020;
+}

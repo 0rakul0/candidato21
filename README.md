@@ -14,11 +14,19 @@ https://trello.com/
   - página inicial <- criar
     - menu top ok
     - banner top ok
+    - produtos de categorias ok
+    - produtos em destaque ok
+    - produtos em promoção ok
+    - produtos em oferta ok
+    - produtos em novidades ok
+
   - pagina de login
   - página de editar informações do cliente
  
-  - página de produto
-  - página de produtos
+  - página de produto 
+  
+  - página de produtos ok <- pagina animada e com filtro
+
   - página de Favoritos
   - página de checkin
   - página de compra finalizada

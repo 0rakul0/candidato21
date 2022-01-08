@@ -37,7 +37,7 @@
             <a class="nav-link" href="/index.html">Home </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link active" href="/pages/produtos.html">Shop </a>
+            <a class="nav-link active" href="/docs/produtos.html">Shop </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Favoritos </a>
@@ -55,17 +55,33 @@
       </div>
     </nav>
   </header>
-  <main> 
+  <main>
     <!--Cards dos objetos grau2 galeria  -->
-    <section id="favoritos" class="my-5 py-5">
+    <section id="favoritos" class="my-5 py-5 ">
       <div class="container text-center mt-5 py-5">
         <h2 class="font-weit-bold">APROVEITE</h2>
         <hr>
         <p>Os melhores produtos com os melhores preços,
           selecionados exclusivamente para você</p>
+      
+          <!-- filtro dos cards-->
+          <nav>
+            <ul class="menu container ">
+              <li class="list" data-filter="tudo">Tudo</li>
+              <li class="list" data-filter="tenis">Tênis</li>
+              <li class="list" data-filter="relogio">Relógios</li>
+              <li class="list" data-filter="mochila">Mochilas</li>
+              <li class="list" data-filter="gorro">Gorros</li>
+              <li class="list" data-filter="camisa">Camisas</li>
+              <li class="list" data-filter="casaco">Casacos</li>
+              <li class="list" data-filter="conjunto">Conjuntos</li>
+            </ul>
+          </nav>
+        <!-- fim do filtro dos cards-->
       </div>
+      <!-- inicios dos produtos da loja-->
       <div class="row mx-auto container">
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/featured/1.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -78,7 +94,7 @@
           <h4 class="p-price">R$ 92,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/featured/2.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -91,7 +107,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens mochila">
           <img class="img-fluid mb-2" src="../img/featured/3.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -104,7 +120,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens gorro">
           <img class="img-fluid mb-2" src="../img/featured/4.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -113,24 +129,26 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <h5 class="p-name">tôquinha</h5>
-          <h4 class="p-price">R$ 22,00</h4>
+          <h5 class="p-name">Gorro impermeável</h5>
+          <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-2" src="../img/shop/1.jpg" alt="">
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12 boxItens camisa">
+            <img class="img-fluid mb-2" src="../img/shop/1.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">tênis esportivo</h5>
+            <h4 class="p-price">R$ 92,00</h4>
+            <button class="buy-now">Comprar agora</button>
           </div>
-          <h5 class="p-name">tênis esportivo</h5>
-          <h4 class="p-price">R$ 92,00</h4>
-          <button class="buy-now">Comprar agora</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+       
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/shop/2.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -143,7 +161,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens mochila">
           <img class="img-fluid mb-2" src="../img/shop/3.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -156,7 +174,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/shop/4.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -169,7 +187,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens gorro">
           <img class="img-fluid mb-2" src="../img/shop/5.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -182,7 +200,7 @@
           <h4 class="p-price">R$ 92,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens casaco">
           <img class="img-fluid mb-2" src="../img/shop/6.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -195,7 +213,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/shop/7.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -208,7 +226,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens casaco">
           <img class="img-fluid mb-2" src="../img/shop/8.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -221,7 +239,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens mochila">
           <img class="img-fluid mb-2" src="../img/shop/9.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -234,7 +252,7 @@
           <h4 class="p-price">R$ 92,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens relogio">
           <img class="img-fluid mb-2" src="../img/shop/10.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -247,7 +265,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens relogio">
           <img class="img-fluid mb-2" src="../img/shop/10.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -260,7 +278,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/shop/12.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -273,7 +291,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens relogio">
           <img class="img-fluid mb-2" src="../img/shop/13.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -286,7 +304,7 @@
           <h4 class="p-price">R$ 92,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens tenis">
           <img class="img-fluid mb-2" src="../img/shop/14.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -299,7 +317,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens gorro">
           <img class="img-fluid mb-2" src="../img/shop/15.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -312,7 +330,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens camisa">
           <img class="img-fluid mb-2" src="../img/shop/16.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -325,7 +343,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens casaco">
           <img class="img-fluid mb-2" src="../img/shop/17.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -338,7 +356,7 @@
           <h4 class="p-price">R$ 92,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens gorro">
           <img class="img-fluid mb-2" src="../img/shop/18.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -351,7 +369,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens conjunto">
           <img class="img-fluid mb-2" src="../img/shop/19.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -364,7 +382,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens conjunto">
           <img class="img-fluid mb-2" src="../img/shop/20.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -377,7 +395,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens casaco">
           <img class="img-fluid mb-2" src="../img/shop/21.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -390,7 +408,7 @@
           <h4 class="p-price">R$ 92,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens mochila">
           <img class="img-fluid mb-2" src="../img/shop/22.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -403,7 +421,7 @@
           <h4 class="p-price">R$ 120,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens camisa">
           <img class="img-fluid mb-2" src="../img/shop/23.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -416,7 +434,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens camisa">
           <img class="img-fluid mb-2" src="../img/shop/24.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -429,7 +447,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens camisa">
           <img class="img-fluid mb-2" src="../img/shop/25.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -442,7 +460,7 @@
           <h4 class="p-price">R$ 145,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
+        <div class="product text-center col-lg-3 col-md-4 col-12 boxItens camisa">
           <img class="img-fluid mb-2" src="../img/shop/26.jpg" alt="">
           <div class="star">
             <i class="fas fa-star"></i>
@@ -455,6 +473,7 @@
           <h4 class="p-price">R$ 22,00</h4>
           <button class="buy-now">Comprar agora</button>
         </div>
+
       </div>
     </section>
     <nav aria-label="..." class="container">
@@ -466,18 +485,18 @@
           <a class="page-link" href="#">1</a>
         </li>
         <li class="page-item">
-          <a class="page-link"  href="#">2</a>
+          <a class="page-link" href="#">2</a>
         </li>
         <li class="page-item">
-          <a class="page-link"  href="#">3</a>
+          <a class="page-link" href="#">3</a>
         </li>
         <li class="page-item">
           <a class="page-link" href="#">...</a>
         </li>
-       </ul>
+      </ul>
     </nav>
   </main>
-   <!--Footer-->
+  <!--Footer-->
   <footer class="mt-5 py-5">
     <div class="row container mx-auto pt-5">
       <div class="footer-one col-lg-3 col-md-6 col-12">
@@ -549,6 +568,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/galeria.js"></script>
 </body>
 
 </html>
