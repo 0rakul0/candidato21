@@ -37,7 +37,7 @@
             <a class="nav-link" href="/index.html">Home </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link active" href="/docs/produtos.html">Shop </a>
+            <a class="nav-link active" href="../docs/produtos.html">Shop </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Favoritos </a>
@@ -57,8 +57,181 @@
   </header>
   <!--- End Navbar -->
   <main>
+    <!-- produto detalhado-->
+    <section class=" container dproduct my-5 pt-5">
+      <div class="row mt-5">
+        <!--imagem do produto-->
+        <div class="col-lg-5 col-md-12 col-12">
+          <img class="img-fluid w-100 pb-1" src="../img/shop/1.jpg" id="MainImg" alt="">
+          <!-- outras imagens do produto-->
+          <div class="small-img-group">
+            <div class="small-img-col">
+              <img class="small-img" src="../img/shop/1.jpg" alt="">
+            </div>
+            <div class="small-img-col">
+              <img class="small-img" src="../img/shop/24.jpg" alt="">
+            </div>
+            <div class="small-img-col">
+              <img class="small-img" src="../img/shop/25.jpg" alt="">
+            </div>
+            <div class="small-img-col">
+              <img class="small-img" src="../img/shop/26.jpg" alt="">
+            </div>
 
-
+          </div>
+        </div>
+        <!--detalis de preço-->
+        <div class="col-lg-5 col-md-12 col-12">
+          <div>
+            <span id="caminho">
+              <h6> Home / Camisa </h6>
+            </span>
+            <span id="descricaoTitulo">
+              <h3 class="py-4"> Camisa Masculina</h3>
+            </span>
+            <span id="preco">
+              <h2> R$ 100,00 </h2>
+            </span>
+            <span id="opcao">
+              <select name="" id="" class="my-3 ">
+                <option value=""> Selecione o tamanho </option>
+                <option value=""> P </option>
+                <option value=""> M </option>
+                <option value=""> G </option>
+                <option value=""> GG </option>
+              </select>
+              <input type="number" value="1">
+              <button class="buy-btn">Adicionar ao carrinho</button>
+            </span>
+          </div>
+          <!--descrição do produto-->
+          <article>
+            <h4 class="mt-5 mb-5">Detales do produto</h4>
+            <span id="descricaoTexto">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Tempore ipsam quibusdam amet placeat, dolores
+              accusamus magnam aliquam saepe magni nobis illo dolore eum
+              distinctio vero sed facere repellat dolorem! Quis?</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--fim produto detalhado-->
+    <!--produtos relacionados-->
+    <section class="container dproduct my-5 pt-5">
+      <div class="row mt-5">
+        <div class="col-lg-12 col-md-12 col-12">
+          <h4 class=" container text-center mt-5 mb-5">Produtos relacionados</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <img class="card-img-top" src="../img/shop/1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <img class="card-img-top" src="../img/shop/23.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <img class="card-img-top" src="../img/shop/24.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <img class="card-img-top" src="../img/shop/25.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- categoria de favoritos -->
+    <!--Cards dos objetos grau2 galeria  -->
+    <section id="favoritos" class="my-5 pb-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>Nossos Favoritos</h3>
+        <hr>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-2" src="../img/featured/1.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">tênis esportivo</h5>
+          <h4 class="p-price">R$ 92,00</h4>
+          <button class="buy-now">Comprar agora</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-2" src="../img/featured/2.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">tênis classico</h5>
+          <h4 class="p-price">R$ 120,00</h4>
+          <button class="buy-now">Comprar agora</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-2" src="../img/featured/3.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Mochila impermeável</h5>
+          <h4 class="p-price">R$ 145,00</h4>
+          <button class="buy-now">Comprar agora</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-2" src="../img/featured/4.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">tôquinha</h5>
+          <h4 class="p-price">R$ 22,00</h4>
+          <button class="buy-now">Comprar agora</button>
+        </div>
+      </div>
+    </section>
   </main>
   <!--Footer-->
   <footer class="mt-5 py-5">
@@ -132,9 +305,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+  <script src="../js/produto.js"></script>
 </body>
 
 </html>

@@ -23,11 +23,12 @@ https://trello.com/
   - pagina de login
   - página de editar informações do cliente
  
-  - página de produto 
-  
-  - página de produtos ok <- pagina animada e com filtro
+  - página de produto ok < pagina concluida
 
-  - página de Favoritos
+  - página de produtos ok <- pagina animada e com filtro e direcionada para a página de produto
+
+  - página de Favoritos 
+  
   - página de checkin
   - página de compra finalizada
   - página de carrinho 
