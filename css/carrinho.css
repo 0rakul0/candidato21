@@ -1,0 +1,73 @@
+#cart-container{
+    overflow-x: auto;
+}
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    overflow: scroll;
+    white-space: nowrap;
+}
+#cart-container table thead{
+    font-weight: 500; 
+}
+#cart-container table thead td{
+    background: var(--ativo);
+    color: var(--branco);
+    padding: 10px 0;
+    border: none;
+}
+#cart-container table td{
+    border: 1px solid var(--preto5);
+    text-align: center;
+}
+#cart-container table td:nth-child(1){
+    width: 90px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+    width: 180px;
+}
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+    width: 140px;
+}
+#cart-container table tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+#cart-container table tbody i{
+    color: var(--preto4);
+}
+#cart-bottom .cupom>div{
+    border: 1px solid var(--preto5);
+}
+#cart-bottom > div > div > div > div.card-header,
+#cart-buttom .cupom h5{
+    background: var(--ativo);
+    color: var(--branco);
+    padding: 10px 12px;
+    border: none;
+    font-weight: 500;
+}
+#cart-bottom > div > div.Total > div > div > div > h6{
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--preto3);
+}
+#cart-buttom > div > div > div > div > div > input,
+#cart-buttom > div > div > div > div > div > p{
+    padding: 0 12px;
+}
+#cart-buttom .cupom input{
+    border: 1px solid var(--preto5);
+    background: var(--branco);
+    color: var(--preto5);
+    font-weight: 500;
+    width: 100%;
+}
+.second-hr{
+    background: var(--preto4);
+}
