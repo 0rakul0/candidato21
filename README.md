@@ -9,6 +9,7 @@ https://trello.com/
 - https://www.lojasleader.com.br/
 - https://www.centauro.com.br/
 - https://www.pontofrio.com.br/
+- https://mdbootstrap.com/docs/b4/jquery/modals/forms/
 
 # Tarefas a fazer
   - página inicial <- criar
@@ -26,13 +27,15 @@ https://trello.com/
 
   - página de Favoritos ok <- pagina concluida 
   
-  - página de carrinho 
+  - página de carrinho ok <- pagina concluida
  
-  - página de compra finalizada
- 
-  - página de checkin
+  - página de compra ok <- pagina concluida
   
-  - pagina de login
+  - pagina de login ok <- pagina concluida
+    -modal de login
+    -modal de cadastro
+
+  - página de checkin
   - página de editar informações do cliente
 
   - página de painel administrativo

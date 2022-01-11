@@ -16,19 +16,17 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
   <!-- My CSS -->
-  <link rel="stylesheet" href="../css/geral.css">
-  <link rel="stylesheet" href="../css/carrinho.css">
+  <link rel="stylesheet" href="/css/geral.css">
+
 </head>
 
 <body>
   <header>
     <!--- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light py-3 fixed-top">
-
       <div class="container logo">
-        <img src="/img/backgrounds/logo2.png" alt="">
+        <img src="/img/backgrounds/logo.png" alt="">
       </div>
-
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
@@ -36,10 +34,10 @@
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home </a>
+            <a class="nav-link" href="../index.html">Home </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../docs/produtos.html">Shop </a>
+          <li class="nav-item ">
+            <a class="nav-link active" href="../docs/produtos.html">Shop </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../docs/favoritos.html">Favoritos </a>
@@ -47,13 +45,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contato </a>
           </li>
-
           <!--icon-->
           <li class="nav-item">
             <i class="fa fa-search" aria-hidden="true"></i>
           </li>
           <li class="nav-item">
-            <a href="../docs/carrinho.html"><i class="fa fa-shopping-bag active" aria-hidden="true"></i></a>
+            <a href="../docs/carrinho.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
           </li>
           <li class="nav-item">
             <a href="../docs/login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
@@ -61,151 +58,8 @@
       </div>
     </nav>
   </header>
-  <!--Sections-->
-  <main>
-    <!-- bloco das compras do carrinho -->
-    <section id="cart-home" class="container pt-5 mt-5">
-      <h2 class="font-weight-bold pt-5 text-center">
-        Suas compras aqui.</h2>
-      <hr>
-      <p class="pt-2 text-center"> Falta pouco para levar para casa.</p>
-    </section>
-    <!-- bloco das compras do carrinho -->
-    <section id="cart-container">
-      <table class="table-cart container my-5">
-        <thead>
-          <tr>
-            <td>Remover</td>
-            <td>Produto</td>
-            <td>Descrição</td>
-            <td>Preço</td>
-            <td>Quantidade</td>
-            <td>Total</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-            <td>
-              <span id="imgProduto"><img src="../img/shoes/1.jpg" alt=""></span>
-            </td>
-            <td>
-              <h5 id="descricao">Nike Air Max</h5>
-            </td>
-            <td>
-              <p id="valorUnidade">R$199,00</p>
-            </td>
-            <td>
-              <input type="number" class="w-25 pl-1" value="3" min="1" max="10">
-            </td>
-            <td>
-              <p id="valorTotal">R$597,00</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-            <td>
-              <span id="imgProduto"><img src="../img/shoes/2.jpg" alt=""></span>
-            </td>
-            <td>
-              <h5 id="descricao">Jordan</h5>
-            </td>
-            <td>
-              <p id="valorUnidade">R$199,00</p>
-            </td>
-            <td>
-              <input type="number" class="w-25 pl-1" value="3" min="1" max="10">
-            </td>
-            <td>
-              <p id="valorTotal">R$597,00</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-            <td>
-              <span id="imgProduto"><img src="../img/shoes/3.jpg" alt=""></span>
-            </td>
-            <td>
-              <h5 id="descricao">Nike Air Max</h5>
-            </td>
-            <td>
-              <p id="valorUnidade">R$199,00</p>
-            </td>
-            <td>
-              <input type="number" class="w-25 pl-1" value="3" min="1" max="10">
-            </td>
-            <td>
-              <p id="valorTotal">R$597,00</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <!-- bloco de conteudo do carrinho -->
-    <!-- -->
-    <section id="cart-bottom" class="container">
-      <!--cupom-->
-      <div class="row">
-        <div class="cupom col-lg-6 col-md-6 col-12 mb-4">
-      
-            <div class="card">
-              <div class="card-header">
-                <h5>Cupom de desconto</h5>
-              </div>
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="cupom">Digite seu cupom</label>
-                  <input type="text" class="form-control" id="cupom" placeholder="Digite seu cupom">
-                </div>
-              </div>
-              <button>Aplicar</button>
-            </div>
-        </div>
-        <!--fim cupom-->
-        <!--total-->
-        <div class="Total col-lg-6 col-md-6 col-12 mb-4">
-          <div class="card">
-            <div class="card-header">
-              <h5>Total da Compra</h5>
-            </div>
-            <div class="container my-3">
-              <div class="d-flex justify-content-between">
-                <h6>Subtotal</h6>
-                <span id="subtotal">
-                  <p>R$597,00</p>
-                </span>
-              </div>
-            </div>
-            <div class=" container my-3">
-              <div class="d-flex justify-content-between">
-                <h6>Frete</h6>
-                <span id="frete">
-                  <p>R$53,00</p>
-                </span>
-              </div>
-            </div>
-            <hr class="second-hr">
-            <div class="container my-3">
-              <div class="d-flex justify-content-between">
-                <h6>Total</h6>
-                <span id="total">
-                  <p>R$650,00</p>
-                </span>
-              </div>
-            </div>
-            <button>Comprar</button>
-          </div>
-        </div>
-    </section>
-  </main>
-  <!--Footer-->
-  <footer class="mt-5 py-5">
+   <!--Footer-->
+   <footer class="mt-5 py-5">
     <div class="row container mx-auto pt-5">
       <div class="footer-one col-lg-3 col-md-6 col-12">
         <img src="../img/backgrounds/logo2.png" alt="">
@@ -276,6 +130,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/galeria.js"></script>
 </body>
-
 </html>
