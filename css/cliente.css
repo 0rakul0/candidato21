@@ -1,0 +1,139 @@
+.blocoContainer{
+    display: flex;
+}
+.menuLateralCliente{
+    margin: 20px 0;
+    width: 100px;
+}
+.menuLateralCliente ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menuLateralCliente ul li{
+    margin: 0;
+    padding: 0;
+}
+.menuLateralCliente ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
+.menuLateralCliente ul li a:hover{
+    background: #ccc;
+}
+.menuLateralCliente ul li a.active{
+    background: #ccc;
+}
+.menuLateralCliente ul li a.active:hover{
+    background: #ccc;
+}
+.subMenuLateralCliente{
+    margin-top: 40px;
+    width: 100%;
+}
+.subMenuLateralCliente h4{
+    font-size: 20px;
+}
+.blocoListaDeDesejo{
+    margin: 20px;
+    width: 100%;
+}
+.blocoListaDeDesejo img{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+}
+.blocoListaDeDesejo h5{
+    font-size: 16px;
+    margin: 10px 0 ;
+}
+.informacaoDoCliente{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px;
+  grid-gap: 30px;
+}
+.informacaoDoCliente h3{
+    font-size: 25px;
+}
+/*Painel central*/
+.informacaoDoCliente .infoContato{
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+}
+.informacaoDoCliente .infoContato a{
+    color: var(--ativo);
+}
+.imagemPerfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 30px;
+}
+.imagemPerfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.infoContato .catalogoEndereco{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.informacaoDoCliente .infoContato  .catalogoEndereco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.informacaoDoCliente .infoContato .catalogoEndereco .endereco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.informacaoDoCliente .infoContato .catalogoEndereco .endereco h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.informacaoDoCliente .infoContato .catalogoEndereco .endereco p{
+    font-size: 16px;
+}
+.informacaoDoCliente .infoContato .catalogoEndereco .endereco a{
+    font-size: 16px;
+    color: var(--ativo);
+}
+/*Painel lateral*/
+.informacaoDoCliente .infoEntrega{
+    position: relative;
+    min-height: 400px;
+    background: var(--branco);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+.tituloPincipal{
+    margin-top: 100px;
+}
+.tituloPincipal h3{
+    font-size: 25px;
+}
+/*pagina de cadastro do cliente*/
+input[type='file']{
+    display: none;
+}
+#imgFoto{
+    cursor: pointer;
+}

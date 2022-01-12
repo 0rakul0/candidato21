@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>teste de candidatos - desenvolvimento front-end.</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="/css/geral.css">
+  <link rel="stylesheet" href="/css/cliente.css">
+
+</head>
+
+<body>
+  <header>
+    <!--- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light py-3 fixed-top">
+      <div class="container logo">
+        <img src="/img/backgrounds/logo.png" alt="">
+      </div>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="../docs/produtos.html">Shop </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../docs/favoritos.html">Favoritos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato </a>
+          </li>
+          <!--icon-->
+          <li class="nav-item">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </li>
+          <li class="nav-item">
+            <a href="../docs/carrinho.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="../docs/login.html"><i class="fa fa-user active" aria-hidden="true"></i></a>
+          </li>
+      </div>
+    </nav>
+  </header>
+  <!--main-->
+  <main>
+    <section>
+      <div class="container my-5 pt-5 col-lg-3">
+        <h3>Minha conta</h3>
+      </div>
+    </section>
+    <section>
+      <div class="blocoContainer">
+        <!--menu da conta-->
+        <div class="menuLateralCliente col-lg-3">
+          <nav>
+            <ul>
+              <li><a href="#"> minha conta </a></li>
+              <li><a href="#"> meus pedidos </a></li>
+              <li><a href="#"> minha lista de desejos </a></li>
+              <hr>
+              <li><a href="#"> catalogo de endreços </a></li>
+              <li><a href="#"> informações da conta </a></li>
+              <hr>
+              <li><a href="#"> avaliação do produto </a></li>
+              <li><a href="#"> inscrição do Newsletter </a></li>
+            </ul>
+          </nav>
+          <div class="subMenuLateralCliente">
+            <h4>Minha lista de desejos</h4>
+            <hr>
+            <div class="blocoListaDeDesejo">
+              <div>
+                <img class="imgem-pequena" src="../img/shop/1.jpg" alt="">
+              </div>
+              <div class="">
+                <h5>Nome do produto</h5>
+                <p>Descrição do produto</p>
+                <p>R$ 00,00</p>
+                <button class="btn btn-danger">remover</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- conteudo do cliente informações-->
+        <div class="informacaoDoCliente container">
+          <div class="infoContato container">
+            <h3>informações da conta</h3>
+            <hr>
+            <div>
+              <div class="imagemPerfil">
+                <img src="../img/backgrounds/profile1.jpg" alt="">
+              </div>
+              <h4>Informação do contato</h4>
+              <p>Nome: <span id="NomeCliente">Jefferson</span></p>
+              <p>E-mail: <span id="EmailCliente">Jefferson.ti@hotmail.com.br</span></p>
+              <p>Celular: <span id="TelefoneCliente">(11) 99999-9999</span></p>
+              <a href="../docs/cadastroCliente.html">Editar informações</a>
+            </div>
+            <hr>
+            <h4>Catálogo de Endereços</h4>
+            <div class="catalogoEndereco">
+              <div class="endereco">
+                <h5>Endereço de cobrança</h5>
+                <p>Rua: <span id="RuaCliente">Rua teste</span></p>
+                <p>Número: <span id="NumeroCliente">123</span></p>
+                <p>Bairro: <span id="BairroCliente">Bairro teste</span></p>
+                <p>Cidade: <span id="CidadeCliente">Cidade teste</span></p>
+                <p>Estado: <span id="EstadoCliente">Estado teste</span></p>
+                <p>CEP: <span id="CEPCliente">12345-678</span></p>
+                <a href="#">Editar endereço</a>
+              </div>
+              <div class="endereco">
+                <h5>Endereço de entrega</h5>
+                <p>Rua: <span id="RuaCliente">Rua teste</span></p>
+                <p>Número: <span id="NumeroCliente">123</span></p>
+                <p>Bairro: <span id="BairroCliente">Bairro teste</span></p>
+                <p>Cidade: <span id="CidadeCliente">Cidade teste</span></p>
+                <p>Estado: <span id="EstadoCliente">Estado teste</span></p>
+                <p>CEP: <span id="CEPCliente">12345-678</span></p>  
+                <a href="#">Editar endereço</a>
+              </div>
+            </div>
+          </div>
+          <div class="infoEntrega container">
+            <div>
+              <h3> Onde está a entrega? </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <img src="../img/backgrounds/logo2.png" alt="">
+        <p class="pt-3">Teste de front-end, feito pelo o 0rakul0</p>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h3 class="pd-2">Setores</h3>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="#"> Masculino</a></li>
+          <li><a href="#"> Femino</a></li>
+          <li><a href="#"> Crianças</a></li>
+          <li><a href="#"> Relógios</a></li>
+          <li><a href="#"> Tênis</a></li>
+          <li><a href="#"> Roupas</a></li>
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h3 class="pd-2">contatos</h3>
+        <div>
+          <h6 class="text-uppercase">Endereço</h6>
+          <p>algum lugar</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">whatsapp</h6>
+          <p>21 989898989</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">E-mail</h6>
+          <p>algumlugar@0rakul0.com</p>
+        </div>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h3 class="pd-2">Instagram</h3>
+        <div class="row">
+          <img class="img-fluid w-25 h-100 m-2" src="../img/insta/1.jpg">
+          <img class="img-fluid w-25 h-100 m-2" src="../img/insta/2.jpg">
+          <img class="img-fluid w-25 h-100 m-2" src="../img/insta/3.jpg">
+          <img class="img-fluid w-25 h-100 m-2" src="../img/insta/4.jpg">
+          <img class="img-fluid w-25 h-100 m-2" src="../img/insta/5.jpg">
+          <img class="img-fluid w-25 h-100 m-2" src="../img/insta/6.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="copyright mt-5">
+      <div class="row container mx-auto">
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+          <img src="img/payment.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+          <p class="text-center">Copyright © 2022 - 0rakul0</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

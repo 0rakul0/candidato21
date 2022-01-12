@@ -13,3 +13,20 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
     });
 });
+//foto perfil
+let foto = document.getElementById('imgFoto');
+let file = document.getElementById('flImage');
+
+foto.addEventListener('click', function() {
+    file.click();
+});
+
+file.addEventListener('change', function() {
+    let ler = new FileReader();
+
+    ler.onload = function() {
+        foto.src = ler.result;
+    }
+
+    ler.readAsDataURL(file.files[0]);
+});
