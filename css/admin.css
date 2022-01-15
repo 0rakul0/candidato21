@@ -1,0 +1,452 @@
+.semOverflow{
+  overflow-y: hidden;
+}
+/* Menu */
+header{
+    position: relative;
+    width: 100%;
+  }
+  .navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--azul);
+    border-left: 10px solid var(--azul);
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .navigation.show{
+    width: 80px;
+    border-left: none;
+  }
+  .navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+  }
+  .navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    padding: 0 10px 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+  }
+  .navigation ul li.hovered,
+  .navigation ul li:hover{
+    background: var(--branco);
+  }
+  .navigation ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--branco);
+  }
+  .navigation ul li.hovered a,
+  .navigation ul li:hover a{
+    color: var(--azul);
+  }
+  .navigation ul li a .icon{
+    position:relative;
+    display: flex;
+    min-width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation ul li a .icon ion-icon{
+    font-size: 1.5em;
+  }
+  .navigation ul li a .text{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+  }
+  
+/* Curvas do menu */
+.navigation ul li.hovered a::before,
+.navigation ul li:hover a::before{
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--branco);
+  z-index: -1;
+}
+.navigation ul li.hovered a::after,
+.navigation ul li:hover a::after{
+  content: '';
+  position: absolute;
+  right: -10px;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 35px -35px 0 10px var(--branco);
+  z-index: -1;
+}
+/* Fim do menu */
+/* Menu Mobile */
+main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--branco);
+    transition: 0.5s;
+    
+  }
+  main.show{
+    width: calc(100% - 80px);
+    left: 80px;
+  }
+  main .topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  main .topbar .toggle{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+  main .topbar .search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+  }
+  main .topbar .search label{
+    position: relative;
+    width: 100%;
+  }
+  main .topbar .search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid var(--preto2);
+  }
+  main .topbar .search label i{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 1rem;
+  }
+  main .topbar .profile{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  main .topbar .profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* card */
+/* bloco de cards */
+.cards{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    grid-gap: 20px;
+  }
+  .cards .card{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--cinza);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+  }
+  .cards .card .numeros{
+    position: relative;
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--azul2);
+  }
+  .cards .card .cardName{
+    color: var(--preto2);
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+  .cards .card .cardIcon{
+    position: relative;
+    font-size: 2.2em;
+    color: var(--preto2);
+    margin-right: 5px;
+  }
+  .cards .card:hover{
+    background: var(--azul);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+  }
+  .cards .card:hover .numeros,
+  .cards .card:hover .cardName,
+  .cards .card:hover .cardIcon{
+    color: var(--branco);
+  }
+  .informacoesVendas{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+  }
+  /* card empresa*/
+  .blocoCardInfoEmpresa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    height: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--cinza);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+
+  }
+  .conteudoCard{
+    text-align: justify;
+    font-size: 1rem;
+  }
+  /* grafico */
+  .produtosRelativos{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .grafico{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .layes{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0px 50px;
+  }
+  .layes::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    transform-origin: 0px 50px;
+    top: 0;
+    left: 0;
+  }
+  .layes:nth-child(1){
+    transform: translateX(50px) rotate(0deg);
+    background: turquoise;
+  }
+  .layes:nth-child(1)::before{
+    transform: rotate(90deg);
+  }
+  .layes:nth-child(2){
+    transform: translateX(50px) rotate(90deg);
+    background: violet;
+  }
+  .layes:nth-child(2)::before{
+    transform: rotate(130deg);
+  }
+  .layes:nth-child(3){
+    transform: translateX(50px) rotate(130deg);
+    background: teal;
+  }
+  .layes:nth-child(3)::before{
+    transform: rotate(180deg);
+  }
+  .layes:nth-child(4){
+    transform: translateX(50px) rotate(180deg);
+    background: orangered;
+  }
+  .layes:nth-child(4)::before{
+    transform: rotate(150deg);
+  }
+  .layesColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .layesColor::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+  }
+  .layesColor:nth-child(1){
+    background: turquoise;
+  }
+  .layesColor:nth-child(2){
+    background: violet;
+  }
+  .layesColor:nth-child(3){
+    background: teal;
+  }
+  .layesColor:nth-child(4){
+    background: orangered;
+  }
+  /* pagina de cadastro de produtos*/
+.containerProdutos{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .blocoInfoLojaProdutos,
+  .blocoProdutosEdicao{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    background: var(--branco);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+  }
+.cardTitle legend h2{
+    position: relative;
+    font-size: 1.2em;
+    color: var(--preto2);
+    margin-bottom: 10px;
+  }
+.cardBody{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+}
+.cardBody label{
+    position: relative;
+    font-size: 1rem;
+    color: var(--preto2);
+    margin-bottom: 5px;
+}
+.cardBody input[type="text"]{
+    position: relative;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 30px;
+}
+.cardBody input[type="text"]:focus::placeholder{
+    color: var(--azul);
+}
+.cardBody input[type="number"]{
+    content: "R$";
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+.cardBody .tamanhoCheckbox,
+.cardBody .cores{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+}
+.cardBody .tamanho,
+.cardBody .cor {    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardBody input[type="checkbox"]{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    align-items: center;
+}
+.cardBody select{
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+.cardBody input[type="file"]{
+    display: none;
+}
+.cardBody .imagensContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  align-items: center;
+}
+.cardBody .img-container{
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 10px;
+}
+.cardBody .img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

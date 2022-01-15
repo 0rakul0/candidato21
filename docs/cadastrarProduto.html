@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+ <title>teste de candidatos - desenvolvimento front-end.</title>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+ <!-- My CSS -->
+ <link rel="stylesheet" href="/css/geral.css">
+ <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+ <header>
+  <!--- menu lateral -->
+  <nav class="navigation">
+   <ul>
+    <li>
+     <a href="">
+      <span class="icon">
+       <i class="fas fa-home"> </i>
+      </span>
+      <span class="title">Área principal
+      </span>
+     </a>
+    </li>
+    <li><a href="">
+      <span class="icon">
+       <i class="fas fa-cart-plus"></i>
+      </span>
+      <span class="title">
+       Adicionar produtos
+      </span>
+     </a></li>
+    <li><a href="">
+      <span class="icon">
+       <i class="fas fa-trash-alt"></i>
+      </span>
+      <span class="title">
+       Excluir produtos
+      </span>
+     </a></li>
+    <li><a href="">
+      <span class="icon">
+       <i class="fas fa-trophy"></i>
+      </span>
+      <span class="title">
+       Adicionar cupons
+      </span>
+     </a></li>
+    <li><a href="">
+      <span class="icon">
+       <i class="fas fa-users"></i>
+      </span>
+      <span class="title">
+       Clientes
+      </span>
+     </a></li>
+    <li><a href="">
+      <span class="icon">
+       <i class="fas fa-chart-pie"></i>
+      </span>
+      <span class="title">
+       Dados de vendas
+      </span>
+     </a></li>
+    <li><a href="">
+      <span class="icon">
+       <i class="far fa-chart-bar"></i>
+      </span>
+      <span class="title">
+       Midias sociais
+      </span>
+     </a></li>
+   </ul>
+  </nav>
+ </header>
+ <main class="semOverflow">
+  <header class="topbar">
+   <div class="toggle">
+    <i class="fas fa-bars"></i>
+   </div>
+   <div class="search">
+    <label for="search">
+     <i class=""></i>
+     <input type="search" id="search" placeholder="Pesquisar" />
+    </label>
+   </div>
+   <div class="profile">
+    <img src="../img/backgrounds/profile1.jpg" alt="profile" />
+   </div>
+  </header>
+  <!-- cards rapidos -->
+  <section class="cards">
+   <div class="card">
+    <div>
+     <div class="numeros">1,807</div>
+     <div class="cardName">Views</div>
+    </div>
+    <div class="cardIcon">
+     <i class="fas fa-eye"></i>
+    </div>
+   </div>
+   <div class="card">
+    <div>
+     <div class="numeros">1000</div>
+     <div class="cardName">Vendas</div>
+    </div>
+    <div class="cardIcon">
+     <i class="fas fa-shopping-cart"></i>
+    </div>
+   </div>
+   <div class="card">
+    <div>
+     <div class="numeros">807</div>
+     <div class="cardName">Comentarios</div>
+    </div>
+    <div class="cardIcon">
+     <i class="fas fa-comments"></i>
+    </div>
+   </div>
+   <div class="card">
+    <div>
+     <div class="numeros">$7,887</div>
+     <div class="cardName">Saldo</div>
+    </div>
+    <div class="cardIcon">
+     <i class="fas fa-dollar-sign"></i>
+    </div>
+   </div>
+  </section>
+  <!-- cards das empresas contribuintes -->
+  <section class="containerProdutos">
+   <!-- como adição de desconto, adição de cupom, adição de item, edição de item e exclusão de itens.-->
+
+   <div class="blocoProdutosEdicao">
+    <fieldset>
+     <div class="cardTitle">
+      <legend>
+       <h2>Adicionar produto </h2>
+      </legend>
+     </div>
+     <form action="" method="post">
+      <div class="cardBody">
+       <div class="form-group">
+        <label for="nome">Nome do produto </label>
+        <input type="text" required class="form-control" id="nome" placeholder="Nome do produto">
+       </div>
+       <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <textarea class="form-control" required id="descricao" rows="3"></textarea>
+       </div>
+       <div class="form-group">
+        <label for="valor">Velor</label>
+        <input type="number" required class="form-control" min="1" id="valor" placeholder="R$ ">
+       </div>
+       <div class="form-group">
+        <label for="quantidade">Quantidade</label>
+        <input type="number" required class="form-control" min="1" id="quantidade" placeholder="Quantidade">
+       </div>
+      </div>
+      <div class="cardFooter">
+       <button type="reset">Remover</button>
+       <button type="submit">Adicionar</button>
+      </div>
+     </form>
+    </fieldset>
+   </div>
+   </div>
+   </div>
+   <div class="blocoInfoLojaProdutos">
+    <fieldset>
+     <legend>
+      <h2>Caracteristicas</h2>
+     </legend>
+     <form action="" method="post"></form>
+     <div class="cardBody">
+      <div class="form-group tituloCores">
+       <label for="cores">Cores</label>
+       <div class="cores">
+        <div class="cor">
+         <input type="checkbox" name="cor" id="cor1" value="cor1">
+         <label for="cor1">
+          <span class="cor1">Azul</span>
+         </label>
+        </div>
+        <div class="cor">
+         <input type="checkbox" name="cor" id="cor2" value="cor2">
+         <label for="cor2">
+          <span class="cor2">Amarelo</span>
+         </label>
+        </div>
+        <div class="cor">
+         <input type="checkbox" name="cor" id="cor3" value="cor3">
+         <label for="cor3">
+          <span class="cor3"> Vermelho</span>
+         </label>
+        </div>
+        <div class="cor">
+         <input type="checkbox" name="cor" id="cor4" value="cor4">
+         <label for="cor4">
+          <span class="cor4"> Preto</span>
+         </label>
+        </div>
+        <div class="cor">
+         <input type="checkbox" name="cor" id="cor4" value="cor4">
+         <label for="cor4">
+          <span class="cor4"> Verde</span>
+         </label>
+        </div>
+       </div>
+      </div>
+      <div class="form-group">
+       <label for="categoria">Categoria</label>
+       <select class="form-control" required id="categoria">
+        <option>Couro</option>
+        <option>Courino</option>
+        <option>Polieste</option>
+        <option>Algodão</option>
+        <option>Fibra</option>
+       </select>
+      </div>
+      <div class="form-group">
+       <label for="tamanho">Tamanho</label>
+       <div class="tamanhoCheckbox">
+
+        <div class="tamanho">
+         <input type="checkbox" name="tamanho" id="tamanho1" value="tamanho1">
+         <label for="tamanho1">
+          <span class="tamanho1">P</span>
+         </label>
+        </div>
+        <div class="tamanho">
+         <input type="checkbox" name="tamanho" id="tamanho2" value="tamanho2">
+         <label for="tamanho2">
+          <span class="tamanho2">M</span>
+         </label>
+        </div>
+        <div class="tamanho">
+         <input type="checkbox" name="tamanho" id="tamanho3" value="tamanho3">
+         <label for="tamanho3">
+          <span class="tamanho3">G</span>
+         </label>
+        </div>
+        <div class="tamanho">
+         <input type="checkbox" name="tamanho" id="tamanho4" value="tamanho4">
+         <label for="tamanho4">
+          <span class="tamanho4">GG</span>
+         </label>
+        </div>
+        <div class="tamanho">
+         <input type="checkbox" name="tamanho" id="tamanho5" value="tamanho5">
+         <label for="tamanho5">
+          <span class="tamanho5">XG</span>
+         </label>
+        </div>
+       </div>
+      </div>
+     
+      <div class="form-group imagens">
+       <label for="imagens">Imagem 1</label>
+       <input type="file" name="flImage" id="flImage" accept="image/*" multiple>
+       <div class="imagensContainer">
+        <div class="img-container">
+         <img src="../img/shoes/2.jpg" alt="" id="imgFoto">
+        </div>
+        <div class="img-container">
+         <img src="../img/shoes/3.jpg" alt="" id="imgFoto">
+        </div>
+        <div class="img-container">
+         <img src="../img/shoes/4.jpg" alt="" id="imgFoto">
+        </div>
+        <div class="img-container">
+         <img src="../img/shoes/5.jpg" alt="" id="imgFoto">
+        </div>
+       </div>
+      </div>
+      <div class="cardFooter">
+       <button type="reset">Remover</button>
+       <button type="submit">Adicionar</button>
+      </div>
+      </form>
+    </fieldset>
+   </div>
+  </section>
+ </main>
+ <!-- Optional JavaScript -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="../js/action.js"></script>
+</body>
+
+</html>

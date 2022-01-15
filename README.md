@@ -32,15 +32,15 @@ https://trello.com/
   - página de compra ok <- pagina concluida
   
   - pagina de login ok <- pagina concluida
-    -modal de login
-    -modal de cadastro
+    -modal de login ok <- pagina concluida
+    -modal de cadastro ok <- pagina concluida
 
   - página de checkin
-  - página de editar informações do cliente
+  - página de editar informações do cliente ok <- pagina concluida
 
-  - página de painel administrativo
-  - página para criar cliente
-  - página para cadastrar produto
+  - página de painel administrativo ok <- pagina concluida
+  - página para criar cliente ok <- pagina concluida
+  - página para cadastrar produto ok <- pagina concluida
 
 # tecnologias usadas
   - HTML5

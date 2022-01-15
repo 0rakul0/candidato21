@@ -19,14 +19,16 @@ toggle.addEventListener('click', () => {
     main.classList.toggle('show');
 });
 
-//slide
- document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
-  });
+//imagens produto
+let foto = document.getElementById('imgFoto');
+let file = document.getElementById('flImage');
+foto.addEventListener('click', function() {
+    file.click();
+});
+file.addEventListener('change', function() {
+    let ler = new FileReader();
+    ler.onload = function() {
+        foto.src = ler.result;
+    }
+    ler.readAsDataURL(file.files[0]);
+});
